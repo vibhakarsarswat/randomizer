@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:randomizer/range_selector_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,10 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Randomizer',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const Scaffold(),
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const RangeSelectorPage(),
     );
   }
 }
