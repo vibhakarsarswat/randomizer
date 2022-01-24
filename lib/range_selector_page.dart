@@ -26,12 +26,12 @@ class _RangeSelectorPageState extends State<RangeSelectorPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              RangeSelectorTextFormField(
+              RangeSelectorForm(
                 labelText: "Minimum",
                 intValueSetter: (value) => _minValue = value, //Callback
               ),
               const SizedBox(height: 12),
-              RangeSelectorTextFormField(
+              RangeSelectorForm(
                 labelText: 'Maximum',
                 intValueSetter: (value) => _maxValue = value,
               ),
@@ -52,8 +52,8 @@ class _RangeSelectorPageState extends State<RangeSelectorPage> {
   }
 }
 
-class RangeSelectorTextFormField extends StatelessWidget {
-  const RangeSelectorTextFormField({
+class RangeSelectorForm extends StatelessWidget {
+  const RangeSelectorForm({
     Key? key,
     required this.labelText,
     required this.intValueSetter,
