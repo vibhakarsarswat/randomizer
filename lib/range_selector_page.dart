@@ -11,6 +11,7 @@ class RangeSelectorPage extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Using stateHooks i.e. 'useState'
     final minNum = useState<int>(0);
     final maxNum = useState<int>(0);
 
@@ -33,7 +34,7 @@ class RangeSelectorPage extends HookWidget {
               MaterialPageRoute(
                 builder: (context) => RandomizerPage(
                   min: minNum.value,
-                  max: minNum.value,
+                  max: maxNum.value,
                 ),
               ),
             );
